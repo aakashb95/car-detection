@@ -17,7 +17,8 @@ You need a free-tier/paid subscription with Microsoft Azure at https://portal.az
 
 1. Search/look for 'App Services'
 2. Click 'Create App Service'
-3. Fill details. Create a new resource group with any name. Select Docker Container and click next (Region, Linux Plan and SKU Size come by default):
+3. Fill details. Create a new resource group with any name. <br></br>
+   Select Docker Container (Region, Linux Plan and SKU Size come by default) and click next :
 ![image](https://user-images.githubusercontent.com/48802744/91644360-e9473100-ea58-11ea-8a75-ea3e35a7c32c.png)
 
 4. From 'Image Source' dropdown, choose Docker Hub. After filling everything, click 'Review+create':
@@ -64,8 +65,17 @@ pip install -r requirements.txt
 ```bash
 streamlit run app.py
 ```
-Follow steps 11 and 12 from Azure Deployment above.
+Streamlit outputs localhost url. Open it and follow steps 11 and 12 from Azure Deployment above.
 
+# Known issues:
+1. Since source dataset mostly has images of front and side face of cars, model struggles to identify images taken of car's rear.
+2. Model gets confused between cars from the same manufacturers.
+
+# Further scope of improvement
+1. More data augmentation and deeper understanding of working of CNNs.
+2. Better usage of pretrained models.
+3. More data from all angles of cars and low-res images.
+4. Multi label, Multi car data for a generic use case.
 
 # Files
   stanford_car_model_dataset_fastai.ipynb : 
