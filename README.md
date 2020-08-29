@@ -1,13 +1,14 @@
 # Car make, model and year detection
 
+## Udacity's Microsoft Azure Scholarship Project Showcasing Challenge:
+
 Upload a car photo, identify it's model, make and the year in which it was manufactured. <br></br>
 ![cmm1](https://user-images.githubusercontent.com/48802744/91646051-efdda480-ea68-11ea-992e-7b5105f202d4.gif)
+<i> Images uploaded are neither stored nor re-used for model training. </i>
 
-
+## Dataset
 Car make and model detection using Stanford dataset which was cleaned up and put on kaggle: <br></br>
 https://www.kaggle.com/jutrera/stanford-car-dataset-by-classes-folder
-
-## Udacity's Microsoft Azure Scholarship Project Showcasing Challenge:
 
 The dataset consists of 16k+ images and has 196 distinct labels.<br></br>
 Architecture used: ResNext50_32x4d using fastai API
