@@ -1,18 +1,32 @@
 # Car make, model and year detection
+
+Upload a car photo, identify it's model, make and the year in which it was manufactured. <br></br>
+![cmm1](https://user-images.githubusercontent.com/48802744/91646051-efdda480-ea68-11ea-992e-7b5105f202d4.gif)
+
+
 Car make and model detection using Stanford dataset which was cleaned up and put on kaggle: <br></br>
 https://www.kaggle.com/jutrera/stanford-car-dataset-by-classes-folder
 
-## Implemented during Udacity's Machine Learning Scholarship program for Microsoft Azure Foundation course.
-
+## Udacity's Microsoft Azure Scholarship Project Showcasing Challenge:
 
 The dataset consists of 16k+ images and has 196 distinct labels.<br></br>
 <b>Disclaimer</b>: This is a naive implementation and there is a lot of scope for improvement. Suggestions are welcome.<br></br>
 Current accuracy: 77% on test set.<br></br>
 Architecture used: ResNext50_32x4d using fastai API
 
+## Author: 
+Aakash Bakhle
+
+## App trial:
+Google one of the cars from the car_names in sidebar. Download any image and upload for model to predict. <br></br>
+https://caridentifier.azurewebsites.net/
+
+
+P.S: Link maynot be available always as free tier does not support systems with higher RAM.
+
 ## Running app on Microsoft Azure App service:
 
-This service is not free. Pricing can be found [here](https://azure.microsoft.com/en-gb/pricing/details/app-service/windows/?WT.mc_id=azureportalcard_Service_App%20Services_-inproduct-azureportal)
+This service is not free and works only on S3 or P1v2 and above instances. Pricing can be found [here](https://azure.microsoft.com/en-gb/pricing/details/app-service/windows/?WT.mc_id=azureportalcard_Service_App%20Services_-inproduct-azureportal)
 
 You need a free-tier/paid subscription with Microsoft Azure at https://portal.azure.com/ <br></br>
 
@@ -48,7 +62,6 @@ You need a free-tier/paid subscription with Microsoft Azure at https://portal.az
 12. Play around!
 ![image](https://user-images.githubusercontent.com/48802744/91644785-17c70b00-ea5d-11ea-820c-b69a18c4d2b1.png)
 
-
 ## Running the app on local system:
 
 I assume you have miniconda/anaconda installed and your system has at least 2GB RAM.
@@ -73,10 +86,11 @@ Streamlit outputs localhost url. Open it and follow steps 11 and 12 from Azure D
 2. Model gets confused between cars from the same manufacturers.
 
 # Further scope of improvement
-1. More data augmentation and deeper understanding of working of CNNs.
-2. Better usage of pretrained models.
-3. More data from all angles of cars and low-res images.
-4. Multi label, Multi car data for a generic use case.
+1. More images of different cars captured from different angles. 
+2. Multi label, Multi car data  in a single image, in low resolution for a generic use case.
+3. More data augmentation and deeper understanding of working of CNNs.
+4. Better usage of pretrained models.
+
 
 # Files
   stanford_car_model_dataset_fastai.ipynb : 
