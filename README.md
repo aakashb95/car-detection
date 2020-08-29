@@ -10,8 +10,6 @@ https://www.kaggle.com/jutrera/stanford-car-dataset-by-classes-folder
 ## Udacity's Microsoft Azure Scholarship Project Showcasing Challenge:
 
 The dataset consists of 16k+ images and has 196 distinct labels.<br></br>
-<b>Disclaimer</b>: This is a naive implementation and there is a lot of scope for improvement. Suggestions are welcome.<br></br>
-Current accuracy: 77% on test set.<br></br>
 Architecture used: ResNext50_32x4d using fastai API
 
 ## Author: 
